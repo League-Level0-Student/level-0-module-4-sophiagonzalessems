@@ -5,6 +5,9 @@ import org.jointheleague.graphical.robot.Robot;
 
 public class SleepyHead {
 
+	private static String test;
+
+
 	public static void main(String[] args) {
 
 		// boolean variables can only hold one of two values - true or false
@@ -27,8 +30,15 @@ public class SleepyHead {
 		/************************   STAR STUDENT  **************************/
 
 		boolean passedExam;
-		// Write code to ask the user what percentage they scored in their last exam
-
+	String test = JOptionPane.showInputDialog("What did you score on your test?");
+	int testasint=Integer.parseInt(test);
+	if(testasint>70) {
+	JOptionPane.showMessageDialog(null, "Congrats you pased the test!");
+	}
+	
+	else {
+		JOptionPane.showMessageDialog(null, "Good luck next time.");
+	}
 		
 		// If they scored more than 70, they passed the exam.
 		// Set the boolean passedExam based on their score.
@@ -45,9 +55,10 @@ public class SleepyHead {
 		while (!gameIsOver) {
 			// Ask the user if the game is over. 
 			String gameOver = JOptionPane.showInputDialog("is game over");
-			if (gameOver.equalsIgnoreCase("yes"))
+			if (gameOver.equalsIgnoreCase("yes")) {
 				gameIsOver = true;
-			
+			JOptionPane.showMessageDialog(null,"game is over");
+			}
 			// If they answer "yes", change gameIsOver to true
 
 		}
@@ -58,7 +69,10 @@ public class SleepyHead {
 		
 		boolean isRed;
 		// Ask the user what color to draw with. Based on their answer, set the isRed variable
-		
+		String color=JOptionPane.showInputDialog("What color do you want to draw with? Red, Green, or Blue?");
+		if(color.equals("Red")) {
+			isRed=color.red
+		}
 		
 		boolean isSquare;		
 		// Now ask the user what shape to draw. Based on their answer, set the isSquare variable
