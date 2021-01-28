@@ -71,7 +71,7 @@ public class SleepyHead {
 		// Ask the user what color to draw with. Based on their answer, set the isRed variable
 		String color=JOptionPane.showInputDialog("What color do you want to draw with? Red, Green, or Blue?");
 		if(color.equals("Red")) {
-			isRed=color.red
+			isRed=color.equals(color);
 		}
 		
 		boolean isSquare;		
