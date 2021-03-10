@@ -75,6 +75,11 @@ public class SleepyHead {
 		}
 		
 		boolean isSquare;		
+		
+		
+		if(color.contentEquals("Green")) {
+			
+		}
 		// Now ask the user what shape to draw. Based on their answer, set the isSquare variable
 		
 		
